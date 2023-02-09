@@ -1,0 +1,24 @@
+{
+  "name": "key-assign-load",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "loadTest": "cross-env NODE_ENV=test && node ./loadTest/generateDummyData.js 10000 && artillery run ./loadTest/keyAssign.artillery.conf"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^7.6.0",
+    "@toruslabs/http-helpers": "^3.2.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.3",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "artillery": "^2.0.0-24"
+  }
+}
