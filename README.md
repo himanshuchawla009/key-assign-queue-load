@@ -1,5 +1,9 @@
 
 
+
+### Pre requirments:-
+
+- node 18 or above
 ### To start load test:-
 
 - Note: It is suggested to run these load test on different machines with diff ips, otherwise firewall will block at lower limit.
