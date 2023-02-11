@@ -1,5 +1,5 @@
 const { post } = require("@toruslabs/http-helpers")
-const keyAssignQueueHost = "https://lrc-key-assign.web3auth.io"
+const keyAssignQueueHost = "https://key-assign.web3auth.com"
 
 const importUser = async (userEmail) => {
     const googleVerifier = "tkey-google-cyan";
@@ -38,6 +38,6 @@ const importUser = async (userEmail) => {
 
 
 (async ()=>{
-    await importUser("h@example.com")
+    await importUser("h2@example.com")
     process.exit(1)
 })()
