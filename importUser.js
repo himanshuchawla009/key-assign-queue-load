@@ -10,7 +10,8 @@ const importUser = async (userEmail) => {
         {
             verifier: googleVerifier,
             verifierId: userEmail,
-            network: "cyan"
+            network: "cyan",
+            isNewUser: true,
         }
     );
 
@@ -22,7 +23,8 @@ const importUser = async (userEmail) => {
         {
             verifier: passwordlessVerifier,
             verifierId: userEmail,
-            network: "cyan"
+            network: "cyan",
+            isNewUser: true,
         }
     );
     if (res2?.processingTime > 10) {
